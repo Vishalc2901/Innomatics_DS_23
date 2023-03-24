@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>short url</title>
+    <style>
+        h1{
+            color:crimson;
+            text-align: center;
+            
+        }
+        a{
+            font-size: 20px;
+            padding-left: 20px;
+        }
+        h1 span{
+            color: black;
+        }
+        #dv{
+            background-color: rgb(198, 209, 212);
+            border: 20px;
+            border-radius: 20px;
+            height:500px;
+            margin: 50px; 
+        }
+       nav{
+        margin: 20px;
+       }
+       div{
+        margin: 100px;
+       }
+    </style>
+</head>
+<body>
+    <div id="dv">
+        <nav>
+            <a href="{{url_for('home')}}">Back</a>
+        </nav>
+        <hr>
+        <div>
+        <h1>Original URL : <span>{{url}}</span></h1>
+        <h1>URL : <span>{{res}}</span></h1>
+        </div>
+        <hr>
+    </div>
+</body>
+</html>
