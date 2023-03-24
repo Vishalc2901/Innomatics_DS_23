@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        input{
+            margin: 10px;
+            padding: 5px 50px;
+            border-radius: 8px;
+            border-color: black;
+            font-size: 20px;
+            text-align: center;
+        }
+        button{
+            margin: 10px;
+            padding: 5px 20px;
+            border-radius: 8px;
+            background-color: rgb(155, 151, 151);
+            border-color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<center>
+    <br><br><br><br><br><br><br><br><br>
+<body bgcolor="skyblue">
+    <h1>Convert your String Into Upper Case</h1>
+    <form action="{{ url_for('upper_case') }}" method="post">
+        <input type="text" name="a" placeholder="String">
+        <button>Change String</button>
+    </form>
+</body>
+</html>
