@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex clone</title>
+    <style>
+        body{
+            background-color: rgb(177, 187, 247);
+            padding: 50px;
+        }
+        input{
+            padding: 5px;
+            margin: 10px;
+            font-size: 15px;
+        }
+        label{
+            font-size: 20px;
+            text-align: left;
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "console">
+        <h1 align = 'center'>Regex Clone Application</h1>
+
+        <form align = "center" method="post">
+            <label for="">Enter the text: </label>
+            <input type="text" name="str_input" id="" ><br>
+            <label for="">Enter string: </label>
+            <input type="text" name="exp_input" id="" ><br>
+            <input type="submit" value="SEARCH">
+        </form>
+        
+    </div>
+    <br>
+    <h2 align = "center">These are the conversion details: </h2>
+    <p align = "center">
+        The entered string is: {{st}} <br>
+        The string present is: {{presence}} <br>
+        The count is: {{cnt}}
+    </p>
+    
+
+    
+</body>
+</html>
